@@ -1,0 +1,161 @@
+{
+  "profile": {
+    "target": "保持对 AI、科技生态和 Agent 开发的持续探索",
+    "language": "zh-CN",
+    "timezone": "Asia/Shanghai",
+    "max_items": 10,
+    "candidate_limit": 50,
+    "fresh_days": 7,
+    "max_per_source": 3
+  },
+  "keywords": {
+    "high": [
+      "ai",
+      "artificial intelligence",
+      "llm",
+      "large language model",
+      "foundation model",
+      "open-source model",
+      "multimodal",
+      "reasoning",
+      "robotics",
+      "ai chip",
+      "gpu",
+      "nvidia",
+      "openai",
+      "anthropic",
+      "google deepmind",
+      "agent",
+      "ai agent",
+      "multi-agent",
+      "tool calling",
+      "function calling",
+      "mcp",
+      "model context protocol",
+      "langgraph",
+      "workflow",
+      "planner",
+      "memory",
+      "eval",
+      "evaluation",
+      "rag",
+      "computer use",
+      "browser use",
+      "coding agent"
+    ],
+    "medium": [
+      "machine learning",
+      "deep learning",
+      "ai safety",
+      "ai regulation",
+      "ai search",
+      "ai video",
+      "ai coding",
+      "developer tool",
+      "startup",
+      "semiconductor",
+      "cloud",
+      "data center",
+      "llm app",
+      "context engineering",
+      "vector database",
+      "inference",
+      "ai sdk",
+      "observability",
+      "prompt engineering",
+      "guardrails",
+      "retrieval",
+      "reasoning",
+      "sandbox"
+    ],
+    "low": [
+      "queue",
+      "scheduler",
+      "orchestration",
+      "database",
+      "security",
+      "privacy",
+      "browser"
+    ],
+    "negative": [
+      "funding",
+      "raises",
+      "valuation",
+      "hiring",
+      "layoffs",
+      "press release",
+      "sponsored"
+    ]
+  },
+  "filters": {
+    "exclude_url_domains": [
+      "github.com",
+      "drive.google.com",
+      "finance.yahoo.com"
+    ]
+  },
+  "sources": {
+    "rss": [
+      {
+        "name": "OpenAI Blog",
+        "url": "https://openai.com/blog/rss.xml",
+        "source_weight": 5
+      },
+      {
+        "name": "Anthropic News",
+        "url": "https://www.anthropic.com/news/rss.xml",
+        "source_weight": 5
+      },
+      {
+        "name": "LangChain Blog",
+        "url": "https://blog.langchain.com/rss/",
+        "source_weight": 5
+      },
+      {
+        "name": "Hugging Face Blog",
+        "url": "https://huggingface.co/blog/feed.xml",
+        "source_weight": 4
+      },
+      {
+        "name": "Google DeepMind",
+        "url": "https://deepmind.google/blog/rss.xml",
+        "source_weight": 4
+      },
+      {
+        "name": "TechCrunch AI",
+        "url": "https://techcrunch.com/category/artificial-intelligence/feed/",
+        "source_weight": 3
+      },
+      {
+        "name": "VentureBeat AI",
+        "url": "https://venturebeat.com/category/ai/feed/",
+        "source_weight": 3
+      },
+      {
+        "name": "The Decoder",
+        "url": "https://the-decoder.com/feed/",
+        "source_weight": 3
+      },
+      {
+        "name": "Google Research Blog",
+        "url": "https://research.google/blog/rss/",
+        "source_weight": 3
+      }
+    ],
+    "arxiv": {
+      "max_results": 10,
+      "queries": [
+        "cat:cs.AI AND (agent OR agents OR tool)",
+        "cat:cs.CL AND (agent OR rag OR tool)",
+        "cat:cs.LG AND (agent OR reasoning OR evaluation)"
+      ]
+    }
+  },
+  "render": {
+    "title": "AI Tech Brief",
+    "sections": [
+      "今日快讯",
+      "研究快讯"
+    ]
+  }
+}
